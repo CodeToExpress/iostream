@@ -1,0 +1,859 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="CodeToExpress's first meetup, let's discuss about some programming techniques">
+    <meta name="author" content="Madhav Bahl">
+    <title>Devise N' Master | C2E Meetup #1</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
+        crossorigin="anonymous">
+
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/league.css">
+
+
+
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Printing and PDF exports -->
+    <!-- <script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script> -->
+</head>
+
+<body>
+    <div class="reveal">
+        <div class="slides">
+
+            <section>
+                <h1>Devise N' Master</h1>
+                <p>#Strategize_Programming</p>
+                <div class="row">
+                    <br>
+                    <a style="padding: 20px;" target="_blank" href="https://github.com/CodeToExpress"><i class="fab fa-github"></i></a>
+                    <a style="padding: 20px;" target="_blank" href="https://www.linkedin.com/company/codetoexpress/"><i
+                            class="fab fa-linkedin-in"></i></a>
+                    <a style="padding: 20px;" target="_blank" href="https://www.instagram.com/codetoexpress/"><i class="fab fa-instagram"></i></a>
+                    <a style="padding: 20px;" target="_blank" href="http://codetoexpress.tech"><i class="fas fa-globe"></i></a>
+                    <a style="padding: 20px;" target="_blank" href="https://medium.com/code-to-express"><i class="fab fa-medium"></i></a>
+                </div>
+                <br>
+                <p style="font-size: 0.7em;"><b>Code To Express Meetup #1</b></p>
+                <p style="font-size: 0.7em;">Find this presentation at: <a href="http://madhavbahl.tech/devise-n-master/">http://madhavbahl.tech/devise-n-master/</a></p>
+                <p style="font-size: 0.7em;">Use Arrow Keys To Control this Presentation</p>
+            </section>
+
+            <section id="whyMeet">
+                <section>
+                    <h2>Why I love tech meetups?</h2>
+                    <p class="eight">Why Not Just Youtube Videos, Online Courses, And College Classes?</p>
+                    <br>
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-4 center" style="padding: 10px;">
+                            <h2><i class="fas fa-check-circle"></i></h2>
+                            <p style="font-size: 0.65em;">A chance to discuss about new trends, topics and advancements
+                                in tech</p>
+                        </div>
+
+                        <div class="col-xs-12 col-sm-4 center" style="padding: 10px;">
+                            <h2><i class="fas fa-search"></i></h2>
+                            <p style="font-size: 0.65em;">Find like minded people, network with them, increase your
+                                knowledge!</p>
+                        </div>
+
+                        <div class="col-xs-12 col-sm-4 center" style="padding: 10px;">
+                            <h2><i class="far fa-clock"></i></h2>
+                            <p style="font-size: 0.65em;">Ask queries anyime, like minded people are here to help you
+                                out!</p>
+                        </div>
+                    </div>
+                </section>
+
+            </section>
+
+            <section>
+                <section>
+                    <h1><b><a target="_blank" href="http://codetoexpress.tech/">Code To Express?</a></b></h1>
+                    <img src="./logo.png" style="width: 400px;" alt="">
+
+                </section>
+                <section>
+                    <div class="row">
+                        <p style="margin: 0; padding: 0;">We are a technical community ✨👨‍💻</p>
+                        <div class="col-md-2">
+                        </div>
+                        <div class="col-xs-6 col-md-4 ">
+                            <img src="./img/wa1.jpg" alt="">
+                        </div>
+                        <div class="col-xs-6 col-md-4">
+                            <img src="./img/wa2.jpg" alt="">
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <h3>But why tech community?</h3>
+                    <p>We already have tons of clubs and chapters right?</p>
+
+                    <h3>A community is different</h3>
+                    <p><b>We focus on community upliftment rather then spamming our events, and making our core team do
+                            the desk duties 😂</b></p>
+                </section>
+                <section>
+                    <h2>Our Stats right now...</h2>
+                    <p>
+                        <ul>
+                            <li>Whatsapp community - <b>1000+ members</b></li>
+                            <li>Slack community - <b>300+ members</b></li>
+                            <li>Telegram Community - <b>150+ members</b></li>
+                        </ul>
+                    </p>
+                </section>
+                <section>
+                    <h2>Join our Vellore Community</h2>
+                    <p><a href="http://codetoexpress.tech/c2e-vlr/">C2E | IND-VLR</a></p>
+                    <p><b>Link: <a href="http://codetoexpress.tech/c2e-vlr/">https://codetoexpress.tech/c2e-vlr/</a></b></p>
+                    <br><br>
+                    <h3>RULE #1</h3>
+                    <h2>NO SPAMMING!</h2>
+                </section>
+                <section>
+                    <h2>Join us on other platforms</h2>
+                    <p>
+                        <ul>
+                            <li>Whatsapp community - <b><a href="https://codetoexpress.tech/c2e-vlr/">codetoexpress.tech/c2e-vlr/</a></b></li>
+                            <li>Slack community - <b><a href="http://codetoexpress.tech/invite/">codetoexpress.tech/invite/</a></b></li>
+                            <li>Telegram Community - <b><a href="https://t.me/codetoexpress">t.me/codetoexpress</a></b></li>
+                        </ul>
+                    </p>
+                </section>
+            </section>
+
+            <section>
+                <h1> Let's get to know each other 😁</h1>
+                <p><b>Reminder!!</b> It is a meetup going on here, and you are here to have fun while learning
+                    something new</p>
+            </section>
+
+            <section>
+                <section>
+                    <h3>About Me | The Lean Programmer</h3>
+
+                    <div class="row">
+                        <!-- <div class="col-xs-12 col-md-6 col-offset-md-6"> -->
+                        <img height="400" width="410" style="background: rgba(0,0,0,0); border: none !important; box-shadow: 0;"
+                            src="img/me.png" alt="" srcset="">
+
+                        <!-- </div> -->
+                    </div>
+
+                    <p class="seven"><b>I don't like talking much about myself, still if you are interersted, I've
+                            mentioned some of my social media handles in the next slide where you can stalk me 😅😋</b></p>
+                </section>
+
+                <section>
+                    <h2>Yes, I am socially active :D</h2>
+                    <p>Follow Me On <b>GitHub</b>: <a href="https://github.com/MadhavBahlMD">@MadhavBahlMD</a></p>
+                    <p>Find Me On <b>Insta</b>: <a href="https://www.instagram.com/theleanprogrammer/">@theleanprogrammer</a></p>
+                    <p>Read My Bolgs At <b>Medium</b>: <a href="medium.com/@madhavbahl10">@madhavbahl10</a></p>
+                    <p>Connect With Me On <b>LinkedIn</b>: <a href="https://www.linkedin.com/in/madhavbahl/">@madhavbahl</a></p>
+                </section>
+
+                <section>
+                    <h5>No more wasting time in introduction</h5>
+                    <h2 style="letter-spacing: 2px;">Interested in knowing more about me?</h2>
+                    <p>Visit <a href="http://madhavbahl.tech">http://madhavbahl.tech</a></p>
+                </section>
+
+            </section>
+
+
+
+            <section>
+                <section>
+                    <h3>Okay!</h3>
+                    <h2>Just one last slide about us 🙈</h2>
+
+                    <p>Try out the daily codes initiative 🤩</p>
+                    <p><a href="https://github.com/CodeToExpress/dailycodebase">https://github.com/CodeToExpress/dailycodebase</a></p>
+                </section>
+                <section>
+                    <div class="row">
+                        <!-- <div class="col-xs-12 col-md-6 col-offset-md-6"> -->
+                        <a href="img/timeline.png" download> <img height="620px;" style="background: rgba(0,0,0,0); border: 0;"
+                                src="img/timeline.png" alt="" srcset=""> </a>
+
+                        <!-- </div> -->
+                    </div>
+                </section>
+            </section>
+
+            <section id="index">
+                <section>
+                    <h3 style="">What are we going to discuss today? 🤔💭</h3>
+
+
+
+                    <!-- <p style="font-size: 0.75em;">Open source is in your best interest, whether you're an individual, an organisation, a small business, or a non-profit etc.</p>
+                        <p style="font-size: 0.7em;"> -->
+
+                    <ul class="nine">
+                        <a style="color:bisque;" href="#whyMeet">
+                            <li>Why are meetups great?</li>
+                        </a>
+                        <a style="color:bisque;" href="#DNM">
+                            <li>Devise N Master?</li>
+                        </a>
+                        <a style="color:bisque;" href="#algo">
+                            <li>What is an Algorithm?</li>
+                        </a>
+                        <a style="color:bisque;" href="#fiveSteps">
+                            <li>5 Steps of Problem Solving</li>
+                        </a>
+                        <a style="color:bisque;" href="#howcode">
+                            <li>How do you code?</li>
+                        </a>
+                        <a style="color:bisque;" href="#bigo">
+                            <li>The Big O</li>
+                        </a>
+                        <a style="color:bisque;" href="#runtimes">
+                            <li>Some common runtimes</li>
+                        </a>
+                        <a style="color:bisque;" href="#nextTime">
+                            <li>Topics for next meetup</li>
+                        </a>
+                        <a style="color:bisque;" href="#contact">
+                            <li>Short QnA Session</li>
+                        </a>
+                    </ul>
+                    </p>
+
+                    <p class="six"><b>Disclaimer:</b> I have not invented any of the algorithm or problem solving
+                        pattern that I am going to discuss, hence I own no rights on them, I am merely trying to spread
+                        knowledge about problem solving</p>
+                </section>
+            </section>
+
+
+
+
+
+            <section>
+                <section id="DNM">
+                    <h1>Devise N' Master?</h1>
+                    <p>Can you guess what does it mean?</p>
+                    <p style="font-size: 0.75em;"><b>Hint:</b> It is how we improve our code 😬</p>
+
+
+                </section>
+                <section>
+                    <h2>The "Brahmastra" to solve coding questions 🏹</h2>
+                    <br>
+                    <div class="left" style="text-align:left;">
+                        <p>Step 1: <b style="color: yellow;">Devise</b> a plan for solving problems</p>
+                        <p>Step 2: <b style="color: yellow;">Master</b> some common problem solving techniques</p>
+                    </div>
+
+                </section>
+            </section>
+
+            <section id="algo">
+                <section>
+                    <h1>What do you mean by the word "Algorithm"?</h1>
+                </section>
+                <section>
+                    <h3>A No Non-Sense Definition...</h3>
+                    <p><b>Algorithm is nothing but a process or a set of steps which needs to be followed to accomplish
+                            a particular task.</b></p>
+                </section>
+                <section>
+                    <h1>How to master algorithms?</h1>
+                </section>
+                <section>
+                    <h3>Depends on you 👈</h3>
+
+                    <p>There are tons of resources for learning algorithms, which one you choose depends on how much
+                        time you can give.</p>
+
+                    <p>Here are some materials I suggest everyone -</p>
+
+                    <p class="seven">
+                        <ul class="eight">
+                            <li>Video - <a href="https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-006-introduction-to-algorithms-fall-2011/lecture-videos/">Introduction
+                                    to Algorithms by MIT OCW</a></li>
+                            <li>Book - Data structures and algorithms by narasimha karumanchi</li>
+                            <li>Book - Cracking the Coding Interview</li>
+                            <li>Book - Programming Interviews Exposed</li>
+                            <li>Online - <a href="https://spoj.com">SPOJ</a></li>
+                            <li>Online - <a href="leetcode.com">leetcode</a></li>
+                            <li>Online - <a href="hackerrank.com">Hacker Rank</a></li>
+                            <li>Online - <a href="hackerearth.com">Hacker Earth</a></li>
+                        </ul>
+                    </p>
+                </section>
+                <section>
+                    <h4>In case you have 6 months to 1 year of time...</h4>
+                    <h2>How to prepare for coding interviews</h2>
+
+                    <p>Here's an awesome way:</p>
+                    <p>
+                        <ul class="eight">
+                            <li>Master Data Structures and Algorithms</li>
+                            <li>Practise Coding, try to do this book (Cracking the coding interview)</li>
+                            <li>Build a profile on hackerrank or hackerearth and solve problems</li>
+                            <li>Learn some technilogies like web/app dev and do side projects</li>
+                            <li>Build an awesome GitHub profile</li>
+                            <li>Do Mock Interviews</li>
+                            <li>Build an online profile</li>
+                            <li>Find companies and pass the interview</li>
+                        </ul>
+                    </p>
+                </section>
+            </section>
+
+            <section id="fiveSteps">
+                <section>
+                    <h1>5 Steps of problem solving</h1>
+                    <p class="nine">Read full article: <a href="https://hackernoon.com/how-to-approach-any-coding-problem-9230f3ad6f9">http://madhavbahl.tech/approach-question</a></p>
+                    <p class="seven">
+                        <blockquote>More you sweat in peace,<br>Less you bleed in war</blockquote>
+                    </p>
+                </section>
+                <section>
+                    <h1>Let's Try to solve</h1>
+                    <p><b>Question</b> - Given a sorted array of elements, and an input, find whether the given input
+                        element exists in the array. If yes, print it's position, otherwise print -1</p>
+                </section>
+                <section>
+                    <h3>Step 1: Understand and Analyze the problem</h3>
+
+                    <p><b>Ask Yourself - </b></p>
+                    <p>
+                        <ul class="eight">
+                            <li>Are you able to understand the question fully?</li>
+                            <li>Can you restate the problem in your own words</li>
+                            <li>Would you be able to explain the question to a layman?</li>
+                            <li>What and how many inputs are required?</li>
+                            <li>What would be the output for those inputs</li>
+                            <li>Can you separate out some modules or parts from the problem?</li>
+                            <li>Do you have enough information?</li>
+                        </ul>
+                    </p>
+                </section>
+                <section>
+                    <h3>Step 2: Go through the sample inputs and examples</h3>
+
+                    <p><b>The 4 steps - </b></p>
+                    <p>
+                        <ul class="eight">
+                            <li>Take very simple examples and find the output</li>
+                            <li>Take more complex and bigger inputs to see what will be the output, how many use cases
+                                do we want</li>
+                            <li>Try out the problem with no input, what should be the output now</li>
+                            <li>Try out the problem with invalid input, what should be the output now</li>
+                        </ul>
+                    </p>
+                </section>
+                <section>
+                    <h3>Step 3: Break down the problem</h3>
+
+                    <p><b>Write down somewhere, and if the problem is easy, think of the steps you want to take in mind</b></p>
+
+                </section>
+                <section>
+                    <h3>Step 4: Start solving/coding</h3>
+
+                    <p class="nine"><b>Keep these things in mind:</b></p>
+                    <p>
+                        <ul class="eight">
+                            <li>The point where you started</li>
+                            <li>Where are you right now?</li>
+                            <li>What is your destination?</li>
+                        </ul>
+                    </p>
+                </section>
+                <section>
+                    <h3>Step 5: Look Back and improve</h3>
+
+                    <p class="eight">
+                        <blockquote>Don’t just give up when you are done, give up when you feel content with the
+                            possible solution(s) and you’ve explored the problem completely!</blockquote>
+                    </p>
+
+                    <p class="seven">Ask yourself:</p>
+                    <p class="seven">
+                        <ul class="seven">
+                            <li>Does this code run for every possible input (including the edge cases)</li>
+                            <li>Is there any other way to solve the problem?</li>
+                            <li>Is the code efficient? Can it be more efficient?</li>
+                            <li>Is the code readable?</li>
+                            <li>If someone else showed you this code, would you be able to understand it?</li>
+                            <li>Can the performance be improved?</li>
+                            <li>Can some other algorithm be used which provides better results?</li>
+                        </ul>
+                    </p>
+                </section>
+            </section>
+
+            <section id="howcode">
+                <section>
+                    <h1>Let's do a simple problem 🤩👨‍💻</h1>
+                </section>
+                <section>
+                    <h3>Question</h3>
+                    <p><b>Given a number 'n', write a function to find sum of all natural numbers till that number n</b></p>
+                    <p>
+                        <blockquote>
+                            Example
+                            <br>
+                            input: 5 <br>
+                            output: 1+2+3+4+5 = 15
+                        </blockquote>
+                    </p>
+                </section>
+                <section>
+
+
+                    <div class="row">
+                        <div class="col-md-12 col-md-5">
+                            <p><b>Did you do this?</b></p>
+                            <script src="https://gist.github.com/MadhavBahlMD/8b9124d1e9e313180785cf60a29d6b9d.js"></script>
+                            <p>Runtime - <b>O(n)</b></p>
+                        </div>
+                        <div class="col-md-2"></div>
+                        <div class="col-xs-12 col-md-5">
+                            <p><b>Or, this?</b></p>
+
+                            <script src="https://gist.github.com/MadhavBahlMD/1d9adf214d53b433081d438da3dafd97.js"></script>
+                            <p>Runtime - <b>O(1)</b></p>
+                            <p>This one is better</p>
+                        </div>
+                    </div>
+
+                    <br>
+
+                    <h3>How to measure how much better is it?</h3>
+
+                </section>
+            </section>
+
+            <section id="bigo">
+                <section>
+                    <h1>The Big O?</h1>
+                </section>
+                <section>
+                    <h2>Motivation?</h2>
+                    <p>
+                        <ul class="nine">
+                            <li>We want to find out which algorithm is the best</li>
+                            <li>But we can't compare actual runtimes</li>
+                            <li>Actual runtimes, vary from machine to machine</li>
+                            <li>And even on the same machine, the runtime might vary from time to time</li>
+                            <li>Also, for very fast machinies, time measurement might not be precise enough</li>
+                            <li>Big O provides a general trend on how the algorithm proceeds with respect to the input</li>
+                            <li>This helps us find the parts of code that are less efficient</li>
+                        </ul>
+                    </p>
+                    <p style="text-align: left;" class="seven">Apart from these, the greatest motivation for you to
+                        know well enough about the big O would be the fact that it comes in job interviews a lot 💰🏢</p>
+                </section>
+                <section>
+                    <h1>But what does better code mean?</h1>
+                </section>
+                <section>
+                    <h3>Better Code? 🤔💭</h3>
+                    <p>
+                        <ul>
+                            <li><b>Faster?</b></li>
+                            <li><b>Occupies Less Memory?</b></li>
+                            <li><b>Easier to Read and Understand?</b></li>
+                        </ul>
+                    </p>
+                </section>
+                <section>
+                    <h1>If not time, then what? 🤔💭</h1>
+                </section>
+                <section>
+                    <h5>A better alternative is...</h5>
+                    <h2>Counting the number of simple operations an algorithm must perform to get the desired output.</h2>
+                    <p>And that's where Big O comes in!</p>
+                </section>
+                <section>
+                    <h1>Let's have a look at previous question</h1>
+                    <p>Sum of first n natural numbers</p>
+                </section>
+                <section>
+                    <p class="seven">Method #1</p>
+                    <img src="./img/diag1.png" style="width: 500px; background: rgba(0,0,0,0); border: 0;" alt="">
+                    <p>Total number of operations: <b>5n+2</b></p>
+                </section>
+                <section>
+                    <p class="seven">Method #2</p>
+                    <img src="./img/diag2.png" style="width: 400px; background: rgba(0,0,0,0); border: 0;" alt="">
+                    <p>Total number of operations: <b>3</b></p>
+                </section>
+                <section>
+                    <h3>Exact number doesnt really matter...</h3>
+                    <p class="eight">If we see carefully, regardless of the exact number, the number of operations in
+                        method 1 grows roughly proportionally with n</p>
+                    <img style="background: rgba(0,0,0,0);" src="./img/bigo1.png" alt="">
+                </section>
+                <section>
+                    <h3>The Big O, finally 😌</h3>
+                    <div class="left" style="text-align: left;">
+                        <p class="eight">👉 Maybe a rough representation of the growth trends of an algorithm?</p>
+                        <p class="eight">👉 We suppose that each simple operation (like arithmetic, or assignment)
+                            takes a constant time, and hence, with the increase of number of operations, the runtime of
+                            an algorithm will also increase!</p>
+                        <p class="eight">👉 We just need to find out general trends, Big O is the upper bound.</p>
+                        <p class="eight">👉 Big O allows us to formally represent this fuzzy growth</p>
+                    </div>
+
+                </section>
+                <section>
+                    <h4>Formal Definition To Banti hai boss 😅</h4>
+
+                    <p class="nine">We say that an algorithm is O(f(n)), if the number of simple operations the
+                        computer has to do is less than any scalar (constant) times f(n), as n increases</p>
+
+                    <ul class="eight">
+                        <li>f(n) can be constant - O(1)</li>
+                        <li>f(n) can be linear - O(n)</li>
+                        <li>f(n) can be quadratic - O(n^2)</li>
+                        <li>f(n) can be polynomial of power x - O(n^x)</li>
+                        <li>f(n) can be logarithmic - O(log(n))</li>
+                        <li>and so on...</li>
+                    </ul>
+                </section>
+                <section>
+                    <h3>Guess the complexity 🖖</h3>
+                    <p class="seven"><b>Sum till N</b></p>
+                    <p class="eight">
+                        <blockquote id="code" style="text-align: left;">
+                            function add (n) { <br>
+                            &nbsp;&nbsp;return n*(n+1)/2; <br>
+                            }
+                        </blockquote>
+                    </p>
+                </section>
+                <section>
+                    <h3>Guess the complexity 🖖</h3>
+                    <p class="seven"><b>Sem till N</b></p>
+                    <p class="eight">
+                        <blockquote id="code" style="text-align: left;">
+                            function add (arr, n) { <br>
+                            &nbsp;&nbsp;for (let i=0; i&#8826;n; i++) { <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; if (arr[i] === n) return i; <br>
+                            &nbsp;&nbsp;return -1; <br>
+                            }
+                        </blockquote>
+                    </p>
+                </section>
+                <section>
+                    <h3>Guess the complexity 🖖</h3>
+                    <p class="seven"><b>Print n*n Matrix</b></p>
+                    <p class="eight">
+                        <blockquote id="code" style="text-align: left;">
+                            function print (arr, n) { <br>
+                            &nbsp;&nbsp;for (i=0; i&#8826;n; i++) { <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;for (j=0; j&#8826;n;j++) {<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print (arr[i][j] + " "); <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;} <br>
+                            &nbsp;&nbsp;} <br>
+                            }
+                        </blockquote>
+                    </p>
+                </section>
+                <section>
+                    <h3>Let's simplify the things a little bit</h3>
+                    <div class="left">
+                        <p class="eight"><b>1. Scaler Multiplication Doesn't Matter</b></p>
+                        <p class="seven">O(2n) ❎ &nbsp; &nbsp; &nbsp; O(n) ✅</p>
+                        <p class="seven">O(21 n^2) ❎ &nbsp; &nbsp; &nbsp; O(n^2) ✅</p>
+                        <p class="seven">O(12312) ❎ &nbsp; &nbsp; &nbsp; O(1) ✅</p>
+                        <br>
+                        <p class="eight"><b>2. Scalar Addition and addition of smaller degree "n" Doesn't Matter</b></p>
+                        <p class="seven">O(2n + 50) ❎ &nbsp; &nbsp; &nbsp; O(n) ✅</p>
+                        <p class="seven">O(21 n^2 + 191) ❎ &nbsp; &nbsp; &nbsp; O(n^2) ✅</p>
+                        <p class="seven">O(n^2 + n^1 + 12) ❎ &nbsp; &nbsp; &nbsp; O(n^2) ✅</p>
+                    </div>
+                </section>
+            </section>
+
+            <section id="runtimes">
+                <section>
+                    <h1>Some Common Runtimes</h1>
+                </section>
+                <section>
+                    <p>Let's discuss some common runtimes</p>
+                    <img src="./img/comp1.png" alt="">
+                </section>
+                <section>
+                    <h3>1. Constant Runtime</h3>
+                    <p>
+                        <ul class="eight">
+                            <li>Represented by O(1)</li>
+                            <li>No matter what is the input value, and/or how many inputs or elements are dealt with,
+                                the algorithm will always take the same amount of time to execute</li>
+                            <li>This can be made possible if we are able to find out or derive a formula using which we
+                                can calculate the result directly using mathematical computation rather than iterating
+                                over the collection of data.</li>
+                            <li>For example, to calculate the sum of the first N natural numbers, we can either run a
+                                loop from 1 to N (Runtime — O(N)), or we can directly use the formula, n(n+1)/2
+                                (Runtime — O(1))</li>
+                        </ul>
+                    </p>
+                </section>
+                <section>
+                    <h3>Constant Runtime</h3>
+                    <img src="./img/const.png" alt="">
+                </section>
+                <section>
+                    <h3>2. Logarithmic Runtime</h3>
+                    <p>
+                        <ul class="eight">
+                            <li>Represented by O(log(n))</li>
+                            <li>Doubling the number of elements/inputs, the amount of processing that has to be done
+                                does not get doubled. In fact, the amount of processing to be done gets ‘x’ times
+                                (approximate) when we increase the elements/inputs, 2^x times</li>
+                            <li>This generally occurs when we compute the result by iterating over only some of the
+                                elements in the given collection of data rather than iterating through each of the
+                                elements</li>
+                            <li>A very good example of this algorithm is the Binary Search</li>
+                            <li>You might have guessed, the graph for this would be a logarithmic graph.</li>
+                        </ul>
+                    </p>
+                    <p style="text-align: left;" class="left">
+                        <blockquote id="code" style="text-align: left;">
+                            while (x>0) { <br>
+                            &nbsp; x = x/2; <br>
+                            } <br>
+                        </blockquote>
+                    </p>
+                </section>
+                <section>
+                    <h3>Logarithmic Runtime</h3>
+                    <img src="./img/log.png" alt="">
+                </section>
+                <section>
+                    <h3>3. Linear Runtime</h3>
+                    <p>
+                        <ul class="eight">
+                            <li>Represented by O(n)</li>
+                            <li>As the name suggests, this represents a linear relationship. As we double the number of
+                                elements or inputs, the amount of processing that needs to be done also increases</li>
+                            <li>This occurs when we need to iterate over each element of a collection of data</li>
+                            <li>A very simple example for this is to add the elements in an array. To do so, we will
+                                have to iterate over each element once, which would mean n iterations.</li>
+                        </ul>
+                    </p>
+
+                    <p style="text-align: left;" class="left">
+                        <blockquote id="code" style="text-align: left;">
+                            for (i=0; i&#8826;; i++) { <br>
+                            &nbsp; sum += arr[i]; <br>
+                            } <br>
+                        </blockquote>
+                    </p>
+                </section>
+                <section>
+                    <h3>Linear Runtime</h3>
+                    <img src="./img/linear.png" alt="">
+                </section>
+                <section>
+                    <h1>4. Quasilinear Runtime</h1>
+
+                    <p>
+                        <ul class="eight">
+                            <li>Represented as O(n*log(n))</li>
+                            <li>This is less efficient than linear runtime but still, it is considered to be fairly
+                                good and is majorly found in the divide and conquer algorithms</li>
+                            <li>A very simple explanation for this is that the algorithm performs ‘N’ number of
+                                operations and each operation runs in O(log(n)) (logarithmic) time</li>
+                            <li>The famous Merge Sort algorithm runs in O(n*log(n)) time</li>
+                        </ul>
+                    </p>
+                </section>
+                <section>
+                    <h3>Quasilinear Runtime</h3>
+                    <img src="./img/linear.png" alt="">
+                </section>
+                <section>
+                    <h3>5. Quadratic Runtime</h3>
+                    <p>
+                        <ul class="eight">
+                            <li>Expressed as O(n^2)</li>
+                            <li>Till now you might have guessed, in this case, increasing the elements or the input by
+                                x times would</li>
+                            <li>This generally happens when each element in a collection has to be compared with every
+                                other element</li>
+                            <li>A very common example for this would be 2-dimensional array traversal</li>
+                        </ul>
+                    </p>
+
+                    <p style="text-align: left;" class="left">
+                        <blockquote id="code" style="text-align: left;">
+                            for (i=0; i&#8826;row; i++) { <br>
+                            &nbsp; for (j=0; i&#8826;col; i++) {<br>
+                            &nbsp;&nbsp;&nbsp; print (arr[i][j]) <br>
+                            &nbsp; } <br>
+                            } <br>
+                        </blockquote>
+                    </p>
+                </section>
+                <section>
+                    <h3>Quadratic Runtime</h3>
+                    <img src="./img/quadratic.png" alt="">
+                </section>
+                <section>
+                    <h3>6. Exponential Runtime</h3>
+
+                    <p>
+                        <ul class="eight">
+                            <li>Represented as O(2^n)</li>
+                            <li>In this case, the addition of a single element in the collection, or incrementing input
+                                by 1 would cause the amount of processing required to be doubled.</li>
+                            <li>If you end up solving a problem with this time complexity, you might want to look back
+                                and try to improve the solution. The algorithm having exponential runtime is going to
+                                be very slow</li>
+                            <li>As the name suggests, the graph follows an exponential trend</li>
+                        </ul>
+                    </p>
+                </section>
+                <section>
+                    <h3>Exponential Runtime</h3>
+                    <img src="./img/exponential.png" alt="">
+                </section>
+                <section>
+                    <h3>Comparing the runtimes</h3>
+                    <img src="./img/comp2.png" alt="">
+                </section>
+            </section>
+
+            <section id="nextTime">
+                <section>
+                    <h1>I don't wanna leave it here 😢😕</h1>
+                    <p class="seven">No choice though, too many time consraints</p>
+                    <p><b>Timings of the next meetup will be informed on the whatsapp group 😁🤝</b></p>
+                </section>
+                <section>
+                    <h3>Next meetup will be on programming techniques</h3>
+                    <p>
+                        <ol class="nine">
+                            <li>Bruteforce</li>
+                            <li>Recursion</li>
+                            <li>Frequency Counter</li>
+                            <li>Sliding Window</li>
+                            <li>Multiple Pointers</li>
+                            <li>Memoization</li>
+                            <li>Divide and Conquer</li>
+                            <li>Greedy</li>
+                            <li>Backtracking</li>
+                            <li>Dynamic Programming</li>
+                            <li>And much more...</li>
+                        </ol>
+                    </p>
+                </section>
+            </section>
+
+            <section>
+                <h2>Good Luck Champ!</h2>
+                <h4>The World Of Competitive Coding Awaits You!</h4>
+
+                <p>To View This Presentation, Visit: <a href="http://madhavbahl.tech/devise-n-master">http://madhavbahl.tech/devise-n-master</a></p>
+            </section>
+
+
+            <!-- 
+                <section>
+                    
+
+                    <h2>We Are Starting Some Open Source Projects</h2>
+                    <p class="eight">Have a project idea? send your ideas at <a href="mailto:madhavbahl10@gmail.com?Subject=Project%20Idea" target="_top">madhavbahl10@gmail.com</a></p>
+
+                    
+                </section> -->
+
+
+
+            <section id="contact">
+                <h3>Want meetups on particular topic or tech?</h3>
+                <p class="eight">Want us to conduct a meetup on a specific topic? or if you have some doubts, feel free
+                    to contact </p>
+                <div id="contact">
+                    <form method="POST" action="https://formspree.io/madhavbahl10@gmail.com">
+                        <div class="row">
+                            <div class="col-md-3"></div>
+                            <div class="col-xs-12 col-md-6">
+                                <input type="hidden" name="_subject" value="Contact request from personal website" />
+                                <br>
+                            </div>
+
+                        </div>
+                        <div class="row" style="margin-bottom: 25px !important;">
+                            <div class="col-md-3"></div>
+                            <div class="col-xs-12 col-md-6">
+                                <input type="email" style="width: 100%;" name="_replyto" placeholder="Your email"
+                                    required>
+                            </div>
+                        </div>
+                        <div class="row" style="margin-bottom: 10px !important;">
+                            <div class="col-md-3"></div>
+                            <div class="col-xs-12 col-md-6">
+                                <textarea name="message" style="width: 100%; color: black;" name="_message" placeholder="Your message"
+                                    required></textarea>
+                            </div>
+
+                        </div>
+
+                        <button type="submit" style="color: black;">Send</button>
+                    </form>
+                </div>
+
+            </section>
+
+            <section id="thanks">
+                <h1>Thank You!</h1>
+            </section>
+
+        </div>
+    </div>
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+    <script>
+        // More info about config & dependencies:
+        // - https://github.com/hakimel/reveal.js#configuration
+        // - https://github.com/hakimel/reveal.js#dependencies
+        Reveal.initialize({
+            dependencies: [
+                { src: 'plugin/markdown/marked.js' },
+                { src: 'plugin/markdown/markdown.js' },
+                { src: 'plugin/notes/notes.js', async: true },
+                { src: 'plugin/highlight/highlight.js', async: true, callback: function () { hljs.initHighlightingOnLoad(); } }
+            ]
+        });
+    </script>
+</body>
+
+</html>
