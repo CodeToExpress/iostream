@@ -100,19 +100,22 @@
                     <h3 style="">What are we going to discuss today? 💭</h3>
 
                     <ul style="list-style-type:none;" class="nine">
-                        <a style="color:bisque;" href="#whyFile">
+                        <a style="color:rgb(236, 236, 236);;" href="#prev">
+                            <li>➳ Revision from previous class </li>
+                        </a>
+                        <a style="color:rgb(236, 236, 236);;" href="#whyFile">
                             <li>➳ Why File Handling? </li>
                         </a>
-                        <a style="color:bisque;" href="#excp">
+                        <a style="color:rgb(236, 236, 236);;" href="#excp">
                             <li>➳ Revisit Exceptions </li>
                         </a>
-                        <a style="color:bisque;" href="#io">
+                        <a style="color:rgb(236, 236, 236);;" href="#io">
                             <li>➳ Introduction to IO</li>
                         </a>
-                        <a style="color:bisque;" href="#stream">
+                        <a style="color:rgb(236, 236, 236);;" href="#stream">
                             <li>➳ Intrduction to Streams</li>
                         </a>
-                        <a style="color:bisque;" href="#fout">
+                        <a style="color:rgb(236, 236, 236);;" href="#fout">
                             <li>➳ File Output Stream Class</li>
                         </a>
                         <a style="color:rgb(236, 236, 236);" href="#fin">
@@ -140,7 +143,52 @@
             </section>
 
 
-
+            <section id="prev">
+                <section>
+                    <h1>Revision from previous class</h1>
+                    <h2>The File Class</h2>
+                </section>
+                <section>
+                    <h3>Methods</h3>
+                    <p>
+                        <ul style="font-family:'Courier New', Courier, monospace;" class="eight">
+                            <li>String getName()</li>
+                            <li>String getParent()</li>
+                            <li>String getPath()</li>
+                            <li>String getAbsolutePath()</li>
+                            <li>boolean canRead()</li>
+                            <li>boolean canWrite()</li>
+                            <li>boolean exists()</li>
+                            <li>boolean isDirectory()</li>
+                            <li>boolean isFile()</li>
+                            <li>long length()</li>
+                            <li>boolean renameTo()</li>
+                            <li>And so on...</li>
+                        </ul>
+                    </p>
+                </section>
+                <section>
+                    <h2>Constructors</h2>
+                    <table class="seven">
+                        <tr>
+                            <th>Constructor</th>
+                            <th>Description</th>
+                        </tr>
+                        <tr>
+                            <td>File (String path)</td>
+                            <td>Creates a new file. It gets file path in string</td>
+                        </tr>
+                        <tr>
+                            <td>File (String Parent, String child)</td>
+                            <td>Gets path of parent and name of child as arguments and creates new file</td>
+                        </tr>
+                        <tr>
+                            <td>File (File Parent, String Child)</td>
+                            <td>Gets object of a file whose path will be used as the location of child file, and the name of file as argument</td>
+                        </tr>
+                    </table>
+                </section>
+            </section>
 
 
             <section id="whyFile">
@@ -152,6 +200,8 @@
                     <p>
                         <ul class="eight">
                             <li>Store Data</li>
+                            <li>Use Files when there are no concurrent users</li>
+                            <li>Use Files when security is not a concern</li>
                             <li>Access System Files</li>
                             <li>Create Scripts to automate various tasks</li>
                             <li>Automate the test cases</li>
